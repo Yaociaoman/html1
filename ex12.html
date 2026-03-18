@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Form example</title>
+<title>Shapes</title>
+
+<style>
+container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+/* 矩形 */
+.rectangle {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+
+circle {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  border: 5px solid red;
+}
+</style>
+
 </head>
 
 <body>
 
-<h2>Form example</h2>
+<div class="container">
+  <div class="rectangle"></div>
+  <div class="circle"></div>
+</div>
 
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" value="Yao"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" value="ciaoman"><br><br>
-        <label for="fname">StudentID:</label>
-        <input type="text" id="StudentID" name="StudentID" value="113403512"><br><br>
-        <input type="submit" value="Submit">
-        <input type="reset">
-
-    </form>
 </body>
 </html>
