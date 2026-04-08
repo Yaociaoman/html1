@@ -10,7 +10,7 @@
         }
 
         /* 黃色 inline-block */
-        .highlight {
+        highlight {
             display: inline-block;
             background-color: yellow;
             border: 2px solid blue;
@@ -18,15 +18,14 @@
         }
 
         /* 右側浮動區塊 */
-        .float-box {
-            float: right;
-            width: 200px;
-            height: 200px;
+        float-box {
+            float: right;        /* ⭐ 浮到右邊 */
+            width: 220px;
+            height: 200px;       /* ⭐ 固定高度才會有滾動條 */
             border: 4px solid green;
             padding: 10px;
-            overflow: auto;
+            overflow: auto;      /* ⭐ 這題重點 */
             margin-left: 20px;
-        }
     </style>
 </head>
 
